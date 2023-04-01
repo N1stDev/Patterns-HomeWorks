@@ -130,19 +130,9 @@ class Program
 {
     public static void Main()
     {
-        BrowserFactory browser_factory = new MacOSBrowserFactory("Открыватель браузиров под макасось.");
+        BrowserFactory browser_factory = new MacOSBrowserFactory("Открыватель браузиров под макось.");
         Browser browser1 = browser_factory.Create();
         browser1.openBrowser();
-
-        /*
-        browser_factory = new WindowsBrowserFactory("Открыватель браузиров шиндавс.");
-        Browser browser2 = browser_factory.Create();
-        browser2.openBrowser();
-
-        browser_factory = new WindowsBrowserFactory("Открыватель браузиров глинукс.");
-        Browser browser3 = browser_factory.Create();
-        browser2.openBrowser();
-        */
 
         Console.ReadLine();
     }
